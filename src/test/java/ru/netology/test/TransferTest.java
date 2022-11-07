@@ -12,13 +12,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static ru.netology.data.DataHelper.*;
 
 public class TransferTest {
-    LoginPage loginPage;
-
-
-//    @BeforeEach
-//    void setUp() {
-//        open("http://localhost:9999", LoginPage.class);
-//    }
 
     @Test
     public void transferFirstCardToSecondCard() {

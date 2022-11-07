@@ -16,7 +16,6 @@ public class TransferPage {
     private SelenideElement amount = $("[data-test-id=amount] input");
     private SelenideElement from = $("[data-test-id=from] input");
     private SelenideElement actionTransfer = $(byText("Пополнение карты"));
-    private SelenideElement error = $("[data-test-id='error-message']");
 
     public TransferPage() {
         actionTransfer.shouldBe(visible);
@@ -33,7 +32,4 @@ public class TransferPage {
         button.click();
     }
 
-    public void findErrorMessage(String expectedText) {
-        error.shouldHave(exactText(expectedText), Duration.ofSeconds(15)).shouldBe(visible);
-    }
 }
